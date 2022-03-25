@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class CardEvent extends Component {
   render() {
     return (
-          <div className="CardEvent flex flex-row">
+          <div className="CardEvent flex">
             <div class="w px-3 py-8">
                 <div class="bg-white rounded-lg shadow-2xl">
                     {/* image */}
