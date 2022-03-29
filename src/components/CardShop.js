@@ -7,7 +7,7 @@ class CardShop extends Component {
         
         <div class="">
           <div class="shadow-lg ">
-            <img src={this.props.gambar} class="rounded-t-lg h-80 w-full object-cover"/>
+            <img src={this.props.gambar} class="rounded-t-lg h-80 w-full object-cover shadow-lg"/>
           <div class="p-3">
             
             <h2 class="text-2xl font-bold font-sans">{this.props.nama}</h2>

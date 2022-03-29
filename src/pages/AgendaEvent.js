@@ -13,7 +13,7 @@ class AgendaEvent extends Component {
           tanggal: "12 November 2022 - 30 November 2022",
           keterangan : "Aksi go green merupakan salah satu upaya manusia untuk merawat bumi supaya kembali baik dan nyaman ditinggali. Ini adalah wujud kesadaran dan kepedulian manusia terhadap alam. Dengan cara-cara yang mudah diterapkan, go green diharapkan dapat berdampak positif pada kondisi bumi. ",
           tanggalupdate : "Updated 3 days ago",
-          gambar : "https://rmibogor.id/wp-content/uploads/2019/09/IMG_0832-300x200.jpg"
+          gambar : "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1548069451/Go-Green_zumxth.jpg"
         },
         {
           no: "2",
@@ -22,6 +22,14 @@ class AgendaEvent extends Component {
           keterangan : "Reboisasi adalah penanaman kembali hutan yang telah ditebang yang sudah tandus atau gundul. Dalam bahasa Inggris, reboisasi dikenal dengan reforestation. Cambridge Dictonary mendefinisikan reboisasi sebagai tindakan dari penanaman pohon pada daerah dari lahan yang telah kosong atau rusak. ",
           tanggalupdate : "Updated 10 days ago",
           gambar : "https://s.yimg.com/ny/api/res/1.2/ASh2UCybrelySTj2gvbwTg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MTtjZj13ZWJw/https://s.yimg.com/uu/api/res/1.2/S6mwXHsT4cQ2ws3peYaQOw--~B/aD0zNzk7dz02NzM7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/id/liputan6_hosted_772/8e2929ec5fb8e571a38894195993da82"
+        },
+        {
+          no: "3",
+          judul : "World Clean Up Day",
+          tanggal: "20 November 2022 - 11 Desember 2022",
+          keterangan : "Event World Cleanup Day 2020 mengajak masyarakat untuk melakukan aksi pungut dan pilah sampah mulai dari lingkungan rumah. Dengan tema “Bersatu Untuk Indonesia Bersih” peringatan World Cleanup Day tahun ini relevan dengan kondisi pandemi Covid-19 saat ini, dimana kebersihan menjadi salah satu cara untuk menanggulangi penularan virus Covid-19. ",
+          tanggalupdate : "Updated 28 days ago",
+          gambar : "https://infopublik.id/assets/upload/headline//20170405113331.jpg"
         }
       ],
 
@@ -117,6 +125,10 @@ class AgendaEvent extends Component {
     }
   }
 
+  Close = () => {
+    $("#modal_agenda").hide()
+}
+
 
   render() {
     return (
@@ -184,6 +196,9 @@ class AgendaEvent extends Component {
 
                   <button className="btn btn-info btn-block" type="submit">
                       Simpan
+                  </button>
+                  <button type="button" className="btn btn-danger btn-block ml-1" data-dismiss="modal" onClick={() => this.Close()}>
+                      Close
                   </button>
                 </form>
 

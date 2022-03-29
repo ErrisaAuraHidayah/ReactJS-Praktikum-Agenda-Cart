@@ -10,10 +10,35 @@ import $ from 'jquery'
       baju : [
         {
           no : "111",
-          nama : "Dress Comely",
-          harga : "50000",
-          gambar : "https://s3.bukalapak.com/img/88947808932/s-330-330/2020-07-23T00%3A11%3A25%2B07%3A00.jpeg.webp"
+          nama : "Linen Shirt",
+          harga : "399000 ",
+          gambar : "https://static.zara.net/photos///2022/V/0/1/p/4786/078/251/2/w/437/4786078251_1_1_1.jpg?ts=1645718784483"
+        },
+        {
+          no : "112",
+          nama : "Bluse Pumeti",
+          harga : "579000 ",
+          gambar : "https://static.zara.net/photos///2022/V/0/1/p/0975/043/613/2/w/1920/0975043613_1_1_1.jpg?ts=1645013206599"
+        },
+        {
+          no : "113",
+          nama : "Kemeja Oversize",
+          harga : "200000 ",
+          gambar : "https://static.zara.net/photos///2022/V/0/1/p/3067/472/718/2/w/750/3067472718_15_3_1.jpg?ts=1643809030079"
+        },
+        {
+          no : "114",
+          nama : "Kemeja Linen Saku",
+          harga : "259000 ",
+          gambar : "https://static.zara.net/photos///2022/V/0/1/p/4043/075/526/2/w/750/4043075526_2_1_1.jpg?ts=1647364376933"
+        },
+        {
+          no : "115",
+          nama : "Top Rimpel",
+          harga : "459000 ",
+          gambar : "https://static.zara.net/photos///2022/V/0/1/p/2717/144/330/2/w/750/2717144330_1_1_1.jpg?ts=1645014025244"
         }
+
 
       ],
       
@@ -135,11 +160,15 @@ import $ from 'jquery'
     }
   }
 
+  Close = () => {
+    $("#modal_baju").hide()
+}
+
   render() {
     return (
       
       <div className="container">
-        <h4 className="text-info my-2">
+        <h4 className="text-primary my-2">
           Nama Pengguna: {this.state.user}
         </h4>
 
@@ -165,6 +194,7 @@ import $ from 'jquery'
 
         {/* component modal sbg control manipulasi data */}
         <div className="modal" id="modal_baju">
+          <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
               Form baju
@@ -193,6 +223,9 @@ import $ from 'jquery'
               <button className="btn btn-info btn-block" type="submit">
                 Simpan
               </button>
+              <button type="button" className="btn btn-danger btn-block ml-1" data-dismiss="modal" onClick={() => this.Close()}>
+                Close
+              </button>
 
               </form>
 
@@ -200,6 +233,7 @@ import $ from 'jquery'
 
           </div>
 
+        </div>
         </div>
       </div>
       
